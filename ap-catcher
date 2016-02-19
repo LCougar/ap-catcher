@@ -1,8 +1,26 @@
-# Code by Cougar - Do not copy without credits
-# www.guiadohacker.com.br
-# Written using Python 3.5.1 - For Windows
-# ap-catcher  Copyright (C) 2016  LCougar
+'''
+Code by Cougar - Do not copy without credits
+www.guiadohacker.com.br
+Written using Python 3.4.4 - For Windows
+Release 1.7.5 (February 18, 2016)
 
+Wordlist generator based on keywords
+Copyright (C) 2016  Cougar
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.##
+'''
+	
 # Imports
 
 import os, sys, math, timeit
@@ -92,15 +110,14 @@ def permute(result, l, r):
 			result = swap(result, l, i)
 
 def checkint():
-	try:
-		nkeywords = int(input('Number of keywords: '))
-	except ValueError:
-		print ('Invalid value!')
-	else:
+	while True:
+		nkeywords = input('Number of keywords: ')
+		try:
+			nkeywords = int(nkeywords)
+		except ValueError:
+			print ('Invalid value!')
 		if type(nkeywords) == int:
 			return nkeywords
-		else:
-			checkint()
 
 def parameters():
 	print (space(1))
