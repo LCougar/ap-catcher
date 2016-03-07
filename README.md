@@ -1,16 +1,15 @@
 # ap-catcher
-Wordlist generator based on person information
-
+Wordlist generator based on person information (keywords);
 Uses permutation and element exclusion to generate a wordlist based on keywords.
-Can be used in early brute force attacks, increasing sucess rates due to the large number of passwords containing visible information related to the target.
 
-Future updates:
+The great difference in this case is the element exclusion. When whe brute force with a generated wordlist we don't know if all the words specified are necessarily being used. Said that, its possible to increase success rate over 170 percent.
 
-- Better memory management;
+Can be used in early brute force attacks due to the large number of passwords that are related to the target profile, which mostly are visible information.
+
+# Future updates:
+
 - Multithreading;
-- Improved use on 32-bit systems;
-- Custom memory use function;
 - Custom character limit;
 - Combine wordlists;
 - Automatic uppercase;
-- Port to others OS's;
+- Port to others OS's and programming languages;
