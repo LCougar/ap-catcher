@@ -1,7 +1,12 @@
+Release 1.8.1 (March 7, 2016)
+
+- Update: Major update on memory usage;
+- Removed unused variables;
+
 Release 1.7.5 (February 18, 2016)
 
-- Bug fix: now number of keywords only accept integer values
+- Bug fix: now number of keywords only accept integer values;
 
 Release 1.6.39 (February 17, 2016)
 
-- Initial release
+- Initial release;
